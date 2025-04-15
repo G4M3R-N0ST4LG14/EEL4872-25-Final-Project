@@ -6,14 +6,14 @@ import json
 with open('questions.json') as f:
     question_tree = json.load(f)
 
-# Define the main class for the game system
 class CognitiveGame:
     def __init__(self, master):
         """
         Constructor initializes the GUI and game state.
         """
         self.master = master
-        master.title("Cognitive Ability Test")
+        master.title("🧠 Cognitive Ability Game")
+        master.configure(bg="#f0f4f7")
 
         # Initialize the score to 0
         self.score = 0
@@ -21,12 +21,20 @@ class CognitiveGame:
         # Set the starting point of the decision tree
         self.current_node = question_tree
 
-        # Label widget to display questions
-        self.question_label = tk.Label(master, text="", wraplength=400)
+        # Title
+        self.title_label = tk.Label(master, text="🧠 Cognitive Ability Game", font=("Helvetica", 18, "bold"), bg="#f0f4f7", fg="#333")
+        self.title_label.pack(pady=(10, 5))
+
+        # Score display that will update after each successful question
+        self.score_label = tk.Label(master, text=f"Score: {self.score}", font=("Helvetica", 12), bg="#f0f4f7", fg="#555")
+        self.score_label.pack(pady=(0, 10))
+
+        # Question Text
+        self.question_label = tk.Label(master, text="", wraplength=400, font=("Helvetica", 14), bg="#f0f4f7", fg="#222")
         self.question_label.pack(pady=10)
 
         # Frame to hold the dynamic answer buttons
-        self.button_frame = tk.Frame(master)
+        self.button_frame = tk.Frame(master, bg="#f0f4f7")
         self.button_frame.pack()
 
         # Display the first question
@@ -36,9 +44,9 @@ class CognitiveGame:
         """
         Displays the current question and generates answer buttons.
         """
-        self.clear_buttons()  # Remove any existing buttons first
-
-        # Get the question text from the current node
+        self.clear_buttons() # Remove any existing buttons first
+        # Get the question text from the current nod
+        self.score_label.config(text=f"Score: {self.score}")
         question = self.current_node["question"]
         self.question_label.config(text=question)
 
@@ -47,9 +55,14 @@ class CognitiveGame:
             button = tk.Button(
                 self.button_frame,
                 text=answer,
-                command=lambda a=answer: self.process_answer(a)  # Capture which answer was clicked
+                font=("Helvetica", 12),
+                width=20,
+                bg="#dbeafe",
+                fg="#1e3a8a",
+                activebackground="#93c5fd",
+                command=lambda a=answer: self.process_answer(a) # Capture which answer was clicked
             )
-            button.pack(side=tk.LEFT, padx=5, pady=5)
+            button.pack(pady=5)
 
     def clear_buttons(self):
         """
@@ -72,21 +85,45 @@ class CognitiveGame:
 
         # Check if next_node is a dict and has a 'question' key
         if isinstance(next_node, dict) and "question" in next_node:
-             self.current_node = next_node
-             self.display_question()
+            self.current_node = next_node
+            self.display_question()
         else:
-        # Either it's a string, or it's an invalid node — treat it as the end
+            # Either it's a string, or it's an invalid node — treat it as the end
             self.show_result(next_node if isinstance(next_node, str) else "Test Complete")
 
     def show_result(self, message):
         """
         Displays the final result and user's score.
         """
-        self.clear_buttons()  # Clear any remaining buttons
-        self.question_label.config(text=f"{message}\nYour Score: {self.score}")
+        self.clear_buttons()
+        self.score_label.pack_forget()  # Hide the score label
+        self.question_label.config(
+            text=f"{message}\n\nFinal Score: {self.score}",
+            font=("Helvetica", 14, "bold")
+        )
+
+        # Widget for setting score to 0 and starting at question 1
+        reset_button = tk.Button(
+            self.button_frame,
+            text="Play Again",
+            font=("Helvetica", 12),
+            bg="#a7f3d0",
+            fg="#065f46",
+            activebackground="#6ee7b7",
+            command=self.reset_game
+        )
+        reset_button.pack(pady=10)
+
+    def reset_game(self):
+        """
+        Restarts game
+        """
+        self.score = 0
+        self.current_node = question_tree
+        self.display_question()
 
 # Launch the application
 if __name__ == "__main__":
-    root = tk.Tk()  # Create main application window
-    game = CognitiveGame(root)  # Instantiate the game
-    root.mainloop()  # Start the GUI event loop
+    root = tk.Tk()
+    game = CognitiveGame(root)
+    root.mainloop()
