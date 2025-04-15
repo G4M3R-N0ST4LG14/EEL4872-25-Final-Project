@@ -1,0 +1,32 @@
+{
+    "question": "What is 2 + 2?",
+    "answers": {
+      "4": {
+        "question": "What is the capital of France?",
+        "answers": {
+          "Paris": "High Cognitive Ability",
+          "Lyon": "Moderate Cognitive Ability"
+        },
+        "scores": {
+          "Paris": 10,
+          "Lyon": 5
+        }
+      },
+      "3": {
+        "question": "What color is the sky on a clear day?",
+        "answers": {
+          "Blue": "Moderate Cognitive Ability",
+          "Green": "Low Cognitive Ability"
+        },
+        "scores": {
+          "Blue": 5,
+          "Green": 0
+        }
+      }
+    },
+    "scores": {
+      "4": 10,
+      "3": 2
+    }
+  }
+  
