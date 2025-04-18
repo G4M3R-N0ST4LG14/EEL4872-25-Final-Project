@@ -1,32 +1,311 @@
 {
-    "question": "What is 2 + 2?",
-    "answers": {
-      "4": {
-        "question": "What is the capital of France?",
-        "answers": {
-          "Paris": "High Cognitive Ability",
-          "Lyon": "Moderate Cognitive Ability"
+  "question": "What is 3 + 2?",
+  "answers": {
+    "5": {
+      "question": "What color is a banana?",
+      "answers": {
+        "Yellow": {
+          "question": "What is the capital of Italy?",
+          "answers": {
+            "Rome": {
+              "question": "Which of these is a programming language?",
+              "answers": {
+                "Cobra": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                },
+                "Python": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                }
+              },
+              "scores": {
+                "Cobra": 0,
+                "Python": 10
+              }
+            },
+            "Milan": {
+              "question": "Which of these is a programming language?",
+              "answers": {
+                "Cobra": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                },
+                "Python": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                }
+              },
+              "scores": {
+                "Cobra": 0,
+                "Python": 10
+              }
+            }
+          },
+          "scores": {
+            "Rome": 10,
+            "Milan": 0
+          }
         },
-        "scores": {
-          "Paris": 10,
-          "Lyon": 5
+        "Red": {
+          "question": "What is the capital of Italy?",
+          "answers": {
+            "Rome": {
+              "question": "Which of these is a programming language?",
+              "answers": {
+                "Cobra": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                },
+                "Python": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                }
+              },
+              "scores": {
+                "Cobra": 0,
+                "Python": 10
+              }
+            },
+            "Milan": {
+              "question": "Which of these is a programming language?",
+              "answers": {
+                "Cobra": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                },
+                "Python": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                }
+              },
+              "scores": {
+                "Cobra": 0,
+                "Python": 10
+              }
+            }
+          },
+          "scores": {
+            "Rome": 10,
+            "Milan": 0
+          }
         }
       },
-      "3": {
-        "question": "What color is the sky on a clear day?",
-        "answers": {
-          "Blue": "Moderate Cognitive Ability",
-          "Green": "Low Cognitive Ability"
-        },
-        "scores": {
-          "Blue": 5,
-          "Green": 0
-        }
+      "scores": {
+        "Yellow": 10,
+        "Red": 0
       }
     },
-    "scores": {
-      "4": 10,
-      "3": 2
+    "4": {
+      "question": "What color is a banana?",
+      "answers": {
+        "Yellow": {
+          "question": "What is the capital of Italy?",
+          "answers": {
+            "Rome": {
+              "question": "Which of these is a programming language?",
+              "answers": {
+                "Cobra": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                },
+                "Python": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                }
+              },
+              "scores": {
+                "Cobra": 0,
+                "Python": 10
+              }
+            },
+            "Milan": {
+              "question": "Which of these is a programming language?",
+              "answers": {
+                "Cobra": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                },
+                "Python": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                }
+              },
+              "scores": {
+                "Cobra": 0,
+                "Python": 10
+              }
+            }
+          },
+          "scores": {
+            "Rome": 10,
+            "Milan": 0
+          }
+        },
+        "Red": {
+          "question": "What is the capital of Italy?",
+          "answers": {
+            "Rome": {
+              "question": "Which of these is a programming language?",
+              "answers": {
+                "Cobra": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                },
+                "Python": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                }
+              },
+              "scores": {
+                "Cobra": 0,
+                "Python": 10
+              }
+            },
+            "Milan": {
+              "question": "Which of these is a programming language?",
+              "answers": {
+                "Cobra": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                },
+                "Python": {
+                  "question": "Which number is even?",
+                  "answers": {
+                    "3": "Low Cognitive Ability",
+                    "4": "High Cognitive Ability"
+                  },
+                  "scores": {
+                    "3": 0,
+                    "4": 10
+                  }
+                }
+              },
+              "scores": {
+                "Cobra": 0,
+                "Python": 10
+              }
+            }
+          },
+          "scores": {
+            "Rome": 10,
+            "Milan": 0
+          }
+        }
+      },
+      "scores": {
+        "Yellow": 10,
+        "Red": 0
+      }
     }
+  },
+  "scores": {
+    "5": 10,
+    "4": 0
   }
-  
+}
