@@ -1,306 +1,337 @@
 {
+  "_comment": "Level 1",
   "question": "What is 3 + 2?",
   "answers": {
     "5": {
-      "question": "What color is a banana?",
+      "_comment": "Level 2",
+      "question": "Which animal barks?",
       "answers": {
-        "Yellow": {
-          "question": "What is the capital of Italy?",
+        "Cat": {
+          "_comment": "Level 3",
+          "question": "What is the freezing point of water (\u00b0C)?",
           "answers": {
-            "Rome": {
-              "question": "Which of these is a programming language?",
+            "0": {
+              "_comment": "Level 4",
+              "question": "Which shape has three sides?",
               "answers": {
-                "Cobra": {
-                  "question": "Which number is even?",
+                "Triangle": {
+                  "_comment": "Level 5",
+                  "question": "What is the chemical symbol for water?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "CO2": "Low Cognitive Ability",
+                    "H2O": "High Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "CO2": 0,
+                    "H2O": 10
                   }
                 },
-                "Python": {
-                  "question": "Which number is even?",
+                "Square": {
+                  "_comment": "Level 5",
+                  "question": "What color are strawberries?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "Blue": "Low Cognitive Ability",
+                    "Red": "High Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "Blue": 0,
+                    "Red": 10
                   }
                 }
               },
               "scores": {
-                "Cobra": 0,
-                "Python": 10
+                "Triangle": 10,
+                "Square": 0
               }
             },
-            "Milan": {
-              "question": "Which of these is a programming language?",
+            "100": {
+              "_comment": "Level 4",
+              "question": "What is the chemical symbol for water?",
               "answers": {
-                "Cobra": {
-                  "question": "Which number is even?",
+                "H2O": {
+                  "_comment": "Level 5",
+                  "question": "What color are strawberries?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "Red": "High Cognitive Ability",
+                    "Blue": "Low Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "Red": 10,
+                    "Blue": 0
                   }
                 },
-                "Python": {
-                  "question": "Which number is even?",
+                "CO2": {
+                  "_comment": "Level 5",
+                  "question": "Which planet is known as the Red Planet?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "Mars": "High Cognitive Ability",
+                    "Venus": "Low Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "Mars": 10,
+                    "Venus": 0
                   }
                 }
               },
               "scores": {
-                "Cobra": 0,
-                "Python": 10
+                "H2O": 10,
+                "CO2": 0
               }
             }
           },
           "scores": {
-            "Rome": 10,
-            "Milan": 0
+            "0": 10,
+            "100": 0
           }
         },
-        "Red": {
-          "question": "What is the capital of Italy?",
+        "Dog": {
+          "_comment": "Level 3",
+          "question": "Which shape has three sides?",
           "answers": {
-            "Rome": {
-              "question": "Which of these is a programming language?",
+            "Square": {
+              "_comment": "Level 4",
+              "question": "What is the chemical symbol for water?",
               "answers": {
-                "Cobra": {
-                  "question": "Which number is even?",
+                "H2O": {
+                  "_comment": "Level 5",
+                  "question": "What color are strawberries?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "Red": "High Cognitive Ability",
+                    "Blue": "Low Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "Red": 10,
+                    "Blue": 0
                   }
                 },
-                "Python": {
-                  "question": "Which number is even?",
+                "CO2": {
+                  "_comment": "Level 5",
+                  "question": "Which planet is known as the Red Planet?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "Venus": "Low Cognitive Ability",
+                    "Mars": "High Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "Venus": 0,
+                    "Mars": 10
                   }
                 }
               },
               "scores": {
-                "Cobra": 0,
-                "Python": 10
+                "H2O": 10,
+                "CO2": 0
               }
             },
-            "Milan": {
-              "question": "Which of these is a programming language?",
+            "Triangle": {
+              "_comment": "Level 4",
+              "question": "What color are strawberries?",
               "answers": {
-                "Cobra": {
-                  "question": "Which number is even?",
+                "Red": {
+                  "_comment": "Level 5",
+                  "question": "Which planet is known as the Red Planet?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "Venus": "Low Cognitive Ability",
+                    "Mars": "High Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "Venus": 0,
+                    "Mars": 10
                   }
                 },
-                "Python": {
-                  "question": "Which number is even?",
+                "Blue": {
+                  "_comment": "Level 5",
+                  "question": "How many legs does a spider have?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "8": "High Cognitive Ability",
+                    "6": "Low Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "8": 10,
+                    "6": 0
                   }
                 }
               },
               "scores": {
-                "Cobra": 0,
-                "Python": 10
+                "Red": 10,
+                "Blue": 0
               }
             }
           },
           "scores": {
-            "Rome": 10,
-            "Milan": 0
+            "Square": 0,
+            "Triangle": 10
           }
         }
       },
       "scores": {
-        "Yellow": 10,
-        "Red": 0
+        "Cat": 0,
+        "Dog": 10
       }
     },
     "4": {
-      "question": "What color is a banana?",
+      "_comment": "Level 2",
+      "question": "What is the freezing point of water (\u00b0C)?",
       "answers": {
-        "Yellow": {
-          "question": "What is the capital of Italy?",
+        "0": {
+          "_comment": "Level 3",
+          "question": "Which shape has three sides?",
           "answers": {
-            "Rome": {
-              "question": "Which of these is a programming language?",
+            "Square": {
+              "_comment": "Level 4",
+              "question": "What is the chemical symbol for water?",
               "answers": {
-                "Cobra": {
-                  "question": "Which number is even?",
+                "H2O": {
+                  "_comment": "Level 5",
+                  "question": "What color are strawberries?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "Red": "High Cognitive Ability",
+                    "Blue": "Low Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "Red": 10,
+                    "Blue": 0
                   }
                 },
-                "Python": {
-                  "question": "Which number is even?",
+                "CO2": {
+                  "_comment": "Level 5",
+                  "question": "Which planet is known as the Red Planet?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "Venus": "Low Cognitive Ability",
+                    "Mars": "High Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "Venus": 0,
+                    "Mars": 10
                   }
                 }
               },
               "scores": {
-                "Cobra": 0,
-                "Python": 10
+                "H2O": 10,
+                "CO2": 0
               }
             },
-            "Milan": {
-              "question": "Which of these is a programming language?",
+            "Triangle": {
+              "_comment": "Level 4",
+              "question": "What color are strawberries?",
               "answers": {
-                "Cobra": {
-                  "question": "Which number is even?",
+                "Red": {
+                  "_comment": "Level 5",
+                  "question": "Which planet is known as the Red Planet?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "Mars": "High Cognitive Ability",
+                    "Venus": "Low Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "Mars": 10,
+                    "Venus": 0
                   }
                 },
-                "Python": {
-                  "question": "Which number is even?",
+                "Blue": {
+                  "_comment": "Level 5",
+                  "question": "How many legs does a spider have?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "6": "Low Cognitive Ability",
+                    "8": "High Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "6": 0,
+                    "8": 10
                   }
                 }
               },
               "scores": {
-                "Cobra": 0,
-                "Python": 10
+                "Red": 10,
+                "Blue": 0
               }
             }
           },
           "scores": {
-            "Rome": 10,
-            "Milan": 0
+            "Square": 0,
+            "Triangle": 10
           }
         },
-        "Red": {
-          "question": "What is the capital of Italy?",
+        "100": {
+          "_comment": "Level 3",
+          "question": "What is the chemical symbol for water?",
           "answers": {
-            "Rome": {
-              "question": "Which of these is a programming language?",
+            "H2O": {
+              "_comment": "Level 4",
+              "question": "What color are strawberries?",
               "answers": {
-                "Cobra": {
-                  "question": "Which number is even?",
+                "Blue": {
+                  "_comment": "Level 5",
+                  "question": "Which planet is known as the Red Planet?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "Mars": "High Cognitive Ability",
+                    "Venus": "Low Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "Mars": 10,
+                    "Venus": 0
                   }
                 },
-                "Python": {
-                  "question": "Which number is even?",
+                "Red": {
+                  "_comment": "Level 5",
+                  "question": "How many legs does a spider have?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "8": "High Cognitive Ability",
+                    "6": "Low Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "8": 10,
+                    "6": 0
                   }
                 }
               },
               "scores": {
-                "Cobra": 0,
-                "Python": 10
+                "Blue": 0,
+                "Red": 10
               }
             },
-            "Milan": {
-              "question": "Which of these is a programming language?",
+            "CO2": {
+              "_comment": "Level 4",
+              "question": "Which planet is known as the Red Planet?",
               "answers": {
-                "Cobra": {
-                  "question": "Which number is even?",
+                "Venus": {
+                  "_comment": "Level 5",
+                  "question": "How many legs does a spider have?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "8": "High Cognitive Ability",
+                    "6": "Low Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "8": 10,
+                    "6": 0
                   }
                 },
-                "Python": {
-                  "question": "Which number is even?",
+                "Mars": {
+                  "_comment": "Level 5",
+                  "question": "Which organ pumps blood?",
                   "answers": {
-                    "3": "Low Cognitive Ability",
-                    "4": "High Cognitive Ability"
+                    "Heart": "High Cognitive Ability",
+                    "Liver": "Low Cognitive Ability"
                   },
                   "scores": {
-                    "3": 0,
-                    "4": 10
+                    "Heart": 10,
+                    "Liver": 0
                   }
                 }
               },
               "scores": {
-                "Cobra": 0,
-                "Python": 10
+                "Venus": 0,
+                "Mars": 10
               }
             }
           },
           "scores": {
-            "Rome": 10,
-            "Milan": 0
+            "H2O": 10,
+            "CO2": 0
           }
         }
       },
       "scores": {
-        "Yellow": 10,
-        "Red": 0
+        "0": 10,
+        "100": 0
       }
     }
   },
