@@ -25,16 +25,20 @@ class CognitiveGame:
         self.title_label = tk.Label(master, text="🧠 Cognitive Ability Game", font=("Helvetica", 18, "bold"), bg="#f0f4f7", fg="#333")
         self.title_label.pack(pady=(10, 5))
 
+        # Frame to hold score, question, and answers
+        self.content_frame = tk.Frame(master, bg="#f0f4f7")
+        self.content_frame.pack()
+
         # Score display that will update after each successful question
-        self.score_label = tk.Label(master, text=f"Score: {self.score}", font=("Helvetica", 12), bg="#f0f4f7", fg="#555")
+        self.score_label = tk.Label(self.content_frame, text=f"Score: {self.score}", font=("Helvetica", 12), bg="#f0f4f7", fg="#555")
         self.score_label.pack(pady=(0, 10))
 
         # Question Text
-        self.question_label = tk.Label(master, text="", wraplength=400, font=("Helvetica", 14), bg="#f0f4f7", fg="#222")
+        self.question_label = tk.Label(self.content_frame, text="", wraplength=400, font=("Helvetica", 14), bg="#f0f4f7", fg="#222")
         self.question_label.pack(pady=10)
 
         # Frame to hold the dynamic answer buttons
-        self.button_frame = tk.Frame(master, bg="#f0f4f7")
+        self.button_frame = tk.Frame(self.content_frame, bg="#f0f4f7")
         self.button_frame.pack()
 
         # Display the first question
@@ -45,7 +49,6 @@ class CognitiveGame:
         Displays the current question and generates answer buttons.
         """
         self.clear_buttons() # Remove any existing buttons first
-        # Get the question text from the current nod
         self.score_label.config(text=f"Score: {self.score}")
         question = self.current_node["question"]
         self.question_label.config(text=question)
@@ -96,7 +99,7 @@ class CognitiveGame:
         Displays the final result and user's score.
         """
         self.clear_buttons()
-        self.score_label.pack_forget()  # Hide the score label
+        self.score_label.pack_forget()
         self.question_label.config(
             text=f"{message}\n\nFinal Score: {self.score}",
             font=("Helvetica", 14, "bold")
@@ -116,11 +119,14 @@ class CognitiveGame:
 
     def reset_game(self):
         """
-        Restarts game
+        Restarts game by destroying and reinitializing all widgets.
         """
-        self.score = 0
-        self.current_node = question_tree
-        self.display_question()
+        # Destroy all widgets inside the window
+        for widget in self.master.winfo_children():
+            widget.destroy()
+
+        # Re-initialize the CognitiveGame instance
+        CognitiveGame(self.master)
 
 # Launch the application
 if __name__ == "__main__":
