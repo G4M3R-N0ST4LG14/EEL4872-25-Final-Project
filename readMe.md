@@ -1,6 +1,6 @@
 EEL 4872-25 Final Group Project
 
-by Arturo Lara, Xander L, Akash Sangha,  and Cristhian Velasquez
+by Arturo Lara, Xander Levine, Akash Sangha,  and Cristhian Velasquez
 
 Assignment Description:
 
